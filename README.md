@@ -12,6 +12,8 @@ Each program has several parameters that can be modified near the top of each fi
 
 The helper folder contains a number of potentially useful models as well some additional utility functions.
 
+## Programs
+
 ### train_input.py
 
 This program first trains a convolutional neural network to identify labels of MNIST digit images. Then, keeping the model parameters fixed, it trains the input to maximize the probability of each of the ten labeled digits. These trained input images are then fed back into the model training step and are labeled as a eleventh 'trained image' label. This process is repeated so that the trained input images more and more closely resemble each of the ten digits.
